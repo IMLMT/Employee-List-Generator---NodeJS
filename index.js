@@ -79,7 +79,7 @@ function promptUserManager() {
         {
             type: "input",
             name: "id",
-            message: "What is your manager's id ?"
+            message: "What is your manager's id (Enter ID as 001 to be labeled as a 'Supervisor' in the system)?"
         },
         {
             type: "input",
@@ -144,7 +144,7 @@ async function generateHTML() {
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">My Company's Employee List</h1>
-                <p class="lead">This is a list of employees in my company. Enter the Manager's ID as 001 to be labeled as a 'Supervisor' in the system. Engineers and Interns are labelled accordingly !</p>
+                <p class="lead">This is a list of employees in my company.</p>
             </div>
         </div>
     

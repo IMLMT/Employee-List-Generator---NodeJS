@@ -1,1 +1,1 @@
-var arrayData = [{"Name":"lhsdhls","ID":"001","Email":"lksvflks@lkjlkfs.com","Office":"324324"},{"Name":"fsfs","ID":"fsfs","Email":"fsfs","GitHub":"fsfs"},{"Name":"fdf","ID":"fdfshdv","Email":"fdfshdvds@lkjsfj.com","School":"fdfshdvds"}]
+var arrayData = [{"Name":"hkjsfhf","ID":"001","Email":"hnvfkjdhkfvd@hjkvdjf.com","Office":"435"},{"Name":"bkjsvfkjsfk","ID":"24knsfkj","Email":"bkhskh@ljlhflv.com","GitHub":"kjfjrw"},{"Name":"jkvsfkhvsfh","ID":"jhvsdhv","Email":"vsbvb@hvgksk.com","School":"jnfv"},{"Name":"nvkjfsjk","ID":"nvkjfsjk","Email":"nvkjfsjk","GitHub":"nvkjfsjk"}]
