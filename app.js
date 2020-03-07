@@ -3,7 +3,10 @@ const fs = require("fs");
 // const axios = require("axios");
 const util = require("util");
 
-
+const Employee = require("./lib/Employee");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
 var arrayData = [];
 
@@ -36,6 +39,10 @@ function promptUserEngineer(data) {
         var obj = { "Name": `${ data.name }`, "ID": `${ data.id }`, "Email": `${ data.email }`, "GitHub": `${ data.gh }` }
         arrayData.push(obj);
         console.log(obj);
+        const newEngineer = new Engineer(`${ data.name }`, `${ data.id }`, `${ data.email }`, `${ data.gh }`);
+        // new Employee(`${ data.name }`, `${ data.id }`, `${ data.email }`)
+        console.log(newEngineer.getGithub());
+        console.log(newEngineer.getRole());
         promptChoice()
     })
 }
@@ -65,6 +72,10 @@ function promptUserIntern(data) {
         var obj = { "Name": `${ data.name }`, "ID": `${ data.id }`, "Email": `${ data.email }`, "School": `${ data.school }` }
         arrayData.push(obj);
         console.log(obj);
+        const newIntern = new Intern(`${ data.name }`, `${ data.id }`, `${ data.email }`, `${ data.school }`);
+        // new Employee(`${ data.name }`, `${ data.id }`, `${ data.email }`)
+        console.log(newIntern.getSchool());
+        console.log(newIntern.getRole());
         promptChoice()
     })
 }
@@ -95,6 +106,10 @@ function promptUserManager() {
         var obj = { "Name": `${ data.name }`, "ID": `${ data.id }`, "Email": `${ data.email }`, "Office": `${ data.office }` }
         arrayData.push(obj);
         // console.log(obj);
+        const newManager = new Manager(`${ data.name }`, `${ data.id }`, `${ data.email }`, `${ data.office }`);
+        // new Employee(`${ data.name }`, `${ data.id }`, `${ data.email }`)
+        console.log(newManager.officeNumber);
+        console.log(newManager.getRole());
         promptChoice()
     })
 }

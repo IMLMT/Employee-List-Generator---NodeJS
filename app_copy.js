@@ -3,7 +3,10 @@ const fs = require("fs");
 // const axios = require("axios");
 const util = require("util");
 
-
+const Employee = require("./lib/Employee");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
 var arrayData = [];
 
@@ -34,8 +37,11 @@ function promptUserEngineer(data) {
         }
     ]).then(function(data) {
         var obj1 = { "Name": `${ data.name }`, "ID": `${ data.id }`, "Email": `${ data.email }`, "GitHub": `${ data.gh }` }
+        const newEngineer = new Engineer(`${ data.name }`, `${ data.id }`, `${ data.email }`, `${ data.gh }`);
+        // new Employee(`${ data.name }`, `${ data.id }`, `${ data.email }`)
         arrayData.push(obj1);
         console.log(obj1);
+        console.log(newEngineer.getGithub());
         promptChoice()
     })
 }
@@ -94,6 +100,7 @@ function promptUserManager() {
     ]).then(function(data) {
         var obj3 = { "Name": `${ data.name }`, "ID": `${ data.id }`, "Email": `${ data.email }`, "Office": `${ data.office }` }
         arrayData.push(obj3);
+        new Manager(`${ data.name }`, `${ data.id }`, `${ data.email }`, `${ data.office }`);
         // console.log(obj3);
         promptChoice()
     })
