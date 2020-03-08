@@ -8,8 +8,8 @@ The application may be used by tech savvy HR or management personnel to keep tra
 
 The CLI is generated using Node.JS. It requires the following to be installed through terminal/CMD prior to running the APP.js file.
 
-  - Node Modeule packages: installs FS and UTIL, type 'npm i' on terminal.
-  - Inquirer package: installs inquirer, type 'npm i inquirer' on terminal.
+  - Node Module packages: installs dependencies FS and UTIL, type 'npm i' on terminal.
+  - Inquirer Module package: installs inquirer, type 'npm i inquirer' on terminal.
 
 Run APP.js on terminal.
 
